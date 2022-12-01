@@ -16,8 +16,8 @@
               v-for="(result, r) in results"
               :key="r"
               class="h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 border-transparent hover:border-blue transition duration-300 cursor-pointer group z-1 overflow-hidden"
-              :style="`background-image: url(${renderSmallGif(result.media[0])})`"
-              @click="send(result.media[0])"
+              :style="`background-image: url(${renderSmallGif(result.media_formats)})`"
+              @click="send(result.media_formats)"
             />
           </div>
           <div v-else-if="tags && tags.length" class="grid grid-cols-2 grid-flow-row auto-rows-auto	gap-4">

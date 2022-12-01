@@ -21,7 +21,7 @@
             class="font-bold text-white text-sm py-1 hover:bg-grey-300 hover:bg-opacity-40 px-2 rounded-md cursor-pointer w-max hidden md:block"
             @click="active = 'emoji'"
           >
-            Émoji
+            Emoji
           </p>
         </header>
         <gif-picker v-if="active === 'gif'" :api-key="apiKey" :sources="$data.$sources" @send="({ url, send, type}) => this.send(url, send, type)" />
