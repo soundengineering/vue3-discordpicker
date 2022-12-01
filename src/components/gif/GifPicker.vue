@@ -11,14 +11,15 @@
     <div class="vue3-discordpicker__container flex">
       <div class="bg-grey-400 h-full w-full flex flex-col">
         <div class="overflow-auto relative p-4 h-full w-full">
-          <div v-if="search !== '' && results && results.length" class="grid grid-cols-2 grid-flow-row auto-rows-auto gap-4">
+          <div v-if="search !== '' && results && results.length" class="grid-container">
             <div
               v-for="(result, r) in results"
               :key="r"
               class="h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 hover:border-blue transition duration-300 cursor-pointer group z-1 overflow-hidden"
-              :style="`background-image: url(${renderSmallGif(result.media_formats)})`"
               @click="send(result.media_formats)"
-            />
+            >
+              <img :src="renderSmallGif(result.media_formats)" />
+            </div>
           </div>
           <div v-else-if="tags && tags.length" class="grid grid-cols-2 grid-flow-row auto-rows-auto	gap-4">
             <div
@@ -88,3 +89,17 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.grid-container {
+  columns: 2 170px;
+  column-gap: 10px;
+  padding: 0px;
+}
+.grid-container div {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+</style>

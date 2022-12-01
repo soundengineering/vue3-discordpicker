@@ -235,13 +235,12 @@ export default defineComponent({
 }
 
 .vue3-discord-emojipicker .bg-cover {
-  background-size: contain !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
 }
 
 .vue3-discord-emojipicker .border-2 {
-  border-width: 1px !important;
+  border-color: transparent;
 }
 
 .-z-1 {
