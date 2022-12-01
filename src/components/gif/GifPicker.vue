@@ -59,7 +59,7 @@ export default {
     }
   },
   mounted () {
-    fetch(`https://g.tenor.com/v1/categories?key=${this.apiKey}`)
+    fetch(`https://g.tenor.com/v2/categories?key=${this.apiKey}`)
     .then(res => res.json())
     .then(({ tags }) => this.tags = tags)
   },
@@ -77,7 +77,7 @@ export default {
       return mediumgif.url
     },
     get (query, key) {
-      fetch(`https://g.tenor.com/v1/${query}&key=${this.apiKey}`)
+      fetch(`https://g.tenor.com/v2/${query}&key=${this.apiKey}`)
       .then(res => res.json())
       .then(data => this[key] = data[key])
     },
