@@ -15,7 +15,7 @@
             <div
               v-for="(result, r) in results"
               :key="r"
-              class="h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 border-transparent hover:border-blue transition duration-300 cursor-pointer group z-1 overflow-hidden"
+              class="h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 hover:border-blue transition duration-300 cursor-pointer group z-1 overflow-hidden"
               :style="`background-image: url(${renderSmallGif(result.media_formats)})`"
               @click="send(result.media_formats)"
             />
@@ -24,7 +24,7 @@
             <div
               v-for="(tag, t) in tags"
               :key="t"
-              class="vue3-discord-emojipicker__gifimage h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 border-transparent hover:border-blue transition duration-300 cursor-pointer group z-1 overflow-hidden"
+              class="vue3-discord-emojipicker__gifimage h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 hover:border-blue transition duration-300 cursor-pointer group z-1 overflow-hidden"
               :style="`background-image: url(${tag.image})`"
               @click="search = tag.searchterm"
             >
