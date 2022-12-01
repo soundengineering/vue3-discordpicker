@@ -163,7 +163,7 @@ export default defineComponent({
 </script>
 
 
-<style>
+<style scoped>
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -178,44 +178,8 @@ export default defineComponent({
     height: 400px;
   }
 }
-.vue3-discord-emojipicker__tabs {
-  min-width: 50px;
-}
-.vue3-discord-emojipicker__tabs::-webkit-scrollbar {
-  display: none !important;
-}
-.vue3-discordpicker__container {
-  height: calc(100% - 95px);
-}
-@media (max-width: 768px) {
-  .vue3-discordpicker__container {
-    height: 100%;
-  }
-}
-.vue3-discordpicker__container ::-webkit-scrollbar {
-  width: 10px;
-}
-.vue3-discordpicker__container ::-webkit-scrollbar-track {
-  background: #2F3136;
-  right: 5px;
-}
-.vue3-discordpicker__container ::-webkit-scrollbar-thumb {
-  border-radius: 100px;
-  background: #212224;
-}
 #vue3-discordpicker {
   scroll-behavior: smooth;
-}
-.emojibutton__active .vue3-discord-emojipicker__emojibutton {
-  width: 25px;
-}
-.vue3-discord-emojipicker__emojibutton {
-  background-position: -22px 0;
-  background-size: 242px 88px;
-  background-repeat: no-repeat;
-  width: 23px;
-  height: 22px;
-  display: block;
 }
 
 .vue3-emojipicker .mt-4 {
@@ -230,22 +194,6 @@ export default defineComponent({
   padding-right: 10px !important;
 }
 
-.vue3-discord-emojipicker__gifimage .bg-black {
-  top: 0px !important;
-}
-
-.vue3-discord-emojipicker .bg-cover {
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-}
-
-.vue3-discord-emojipicker .border-2 {
-  border-color: transparent;
-}
-
-.-z-1 {
-  z-index: -1;
-}
 .z-1 {
   z-index: 1;
 }

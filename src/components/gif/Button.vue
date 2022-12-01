@@ -23,3 +23,9 @@ export default defineComponent({
 <template>
   <img :src="sources.gif" alt="Gif button" width="10" height="10" class="vue3-discord-emojipicker__gifbutton w-6 transition duration-200 filter hover:brightness-150 cursor-pointer transform hover:scale-110" @click="$emit('click', 'gif')">
 </template>
+
+<style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</style>

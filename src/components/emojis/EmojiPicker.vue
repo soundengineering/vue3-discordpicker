@@ -181,3 +181,41 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#vue3-discordpicker {
+  scroll-behavior: smooth;
+}
+.vue3-discordpicker__container {
+  height: calc(100% - 95px);
+}
+@media (max-width: 768px) {
+  .vue3-discordpicker__container {
+    height: 100%;
+  }
+}
+.vue3-discordpicker__container ::-webkit-scrollbar {
+  width: 10px;
+}
+.vue3-discordpicker__container ::-webkit-scrollbar-track {
+  background: #2F3136;
+  right: 5px;
+}
+.vue3-discordpicker__container ::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #212224;
+}
+.vue3-discord-emojipicker__tabs {
+  min-width: 50px;
+}
+.vue3-discord-emojipicker__tabs::-webkit-scrollbar {
+  display: none !important;
+}
+.z-1 {
+  z-index: 1;
+}
+</style>

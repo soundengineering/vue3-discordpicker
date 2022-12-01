@@ -15,7 +15,7 @@
             <div
               v-for="(result, r) in results"
               :key="r"
-              class="h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 hover:border-blue transition duration-300 cursor-pointer group z-1 overflow-hidden"
+              class="h-28 rounded-lg bg-cover text-white flex items-center justify-center relative font-semibold font-xl border-2 hover:border-blue transition duration-300 cursor-pointer group z-1"
               @click="send(result.media_formats)"
             >
               <img :src="renderSmallGif(result.media_formats)" />
@@ -91,15 +91,61 @@ export default {
 </script>
 
 <style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#vue3-discordpicker {
+  scroll-behavior: smooth;
+}
 .grid-container {
-  columns: 2 170px;
-  column-gap: 10px;
-  padding: 0px;
+  columns: 2 170px !important;
+  column-gap: 10px !important;
+  padding: 0px !important;
 }
 .grid-container div {
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
-  display: inline-block;
+  width: 100% !important;
+  height: 100% !important;
+  margin-bottom: 10px !important;
+  display: inline-block !important;
+}
+.border-2 {
+  border-color: transparent;
+}
+.bg-cover {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.rounded-lg, .rounded-lg img {
+  border-radius: 0.5em !important;
+}
+.bg-black {
+  top: 0px !important;
+  border-radius: 0.5em !important;
+}
+.border-blue {
+  border-radius: 0.5em !important;
+}
+.vue3-discordpicker__container {
+  height: calc(100% - 95px);
+}
+@media (max-width: 768px) {
+  .vue3-discordpicker__container {
+    height: 100%;
+  }
+}
+.vue3-discordpicker__container ::-webkit-scrollbar {
+  width: 10px;
+}
+.vue3-discordpicker__container ::-webkit-scrollbar-track {
+  background: #2F3136;
+  right: 5px;
+}
+.vue3-discordpicker__container ::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background: #212224;
+}
+.z-1 {
+  z-index: 1;
 }
 </style>

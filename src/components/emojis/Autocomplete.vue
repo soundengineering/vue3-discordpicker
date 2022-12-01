@@ -100,3 +100,9 @@ export default defineComponent({
     </div>
   </div>
 </template>
+
+<style scoped>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</style>
