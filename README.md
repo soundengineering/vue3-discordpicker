@@ -12,10 +12,6 @@ This components is available only in vue3.
 
 🚧 Rework in typescript and composition-api soon.
 
-### Example
-- [Live demo 🎉](https://en-zo.dev/vue3-discordpicker)
-- [Code demo 🎈](https://github.com/enzostvs/vue3-discordpicker/blob/master/examples/Index.vue)
-
 ### Install
 ```js
 npm install vue3-discordpicker
@@ -58,8 +54,8 @@ ____
 "search": `String`
 "gif": `String`
 "emoji": `String`
-"category": `String` (add %REPLACE% in your URL to change with slug, example: `https://en-zo.dev/vue-discord-emojipicker/categories/%REPLACE%.svg` transform into https://en-zo.dev/vue-discord-emojipicker/categories/animals.svg`)
-"variation": `String` (same at category, example: `https://en-zo.dev/vue-discord-emojipicker/variations/variation_%REPLACE%.svg` transform into `https://en-zo.dev/vue-discord-emojipicker/variations/variation_0.svg` (0 - 4))
+"category": `String` (add %REPLACE% in your URL to change with slug, example: `https://rvrb.one/vue-discord-emojipicker/categories/%REPLACE%.svg` transform into https://rvrb.one/vue-discord-emojipicker/categories/animals.svg`)
+"variation": `String` (same at category, example: `https://rvrb.one/vue-discord-emojipicker/variations/variation_%REPLACE%.svg` transform into `https://rvrb.one/vue-discord-emojipicker/variations/variation_0.svg` (0 - 4))
 
 ### Categories
 All categories list:
